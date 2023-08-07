@@ -66,14 +66,13 @@ click the above will guide you <a src='https://pseudo-lab.github.io/data-enginee
 | 1   | 2023-04-02 |[Session 1. Introduction to Data Engineering ](url) | [이영전](https://github.com/Steve-YJ)| What is Data Engineering? | #Data Engineering #Discussion |
 | 2   | 2023-04-09 |[Session 2. Data Sources and Data Collection](url) | [이동욱](https://github.com/ehddnr301), [김세현](https://github.com/sehyun-seankim)| How can we collect data from variaty sources? | #Source Data #Data Collection #Data Type #Structured Data #Unstructured Data #Batch Data #Real-time Data |
 | 3   | 2023-04-16 |[Session 3. Data Transformation and Cleaning](url) | [이영전](https://github.com/Steve-YJ)| How can we transform data more efficiently? | #Data Processing |
-| 4   | 2023-04-30 |[Session 4. Data Storage](url) | [송윤호](https://github.com/dbsgh2344), [전희선](https://github.com/heehehe)| How can we store data more efficiently? | #Data Store #Database #Data Lake #Lakehouse #Object-Storage #NoSQL |
+| 4   | 2023-04-30 |[Session 4. Data Storage](url) | [송윤호](https://github.com/dbsgh3344), [전희선](https://github.com/heehehe)| How can we store data more efficiently? | #Data Store #Database #Data Lake #Lakehouse #Object-Storage #NoSQL |
 | 5   | 2023-05-07 |[Session 5. Data Processing Frameworks](url) | [정경륜](https://github.com/ryuni-dev), [이화림](https://github.com/HWALIMLEE)| How data processing framework help us? | #Hadoop Eco-system #Parallel Computing |
 | 6   | 2023-05-14 |[Session 6. Data Processing Frameworks II](url) | [김예신](https://github.com/yesinkim), [최한승](https://github.com/Henry-choi426)| Learn about various data processing framework | #Apache Spark #Apache Kafka #Apache Storm #Apache Flink |
-| 7   | 2023-05-28 |[Session 7. Introduction to Apache Airflow](url) | 김성훈, [이희민](https://github.com/sainthm) | How can we schedule, orchestrate data processing? | #Apache Airflow #Tutorial |
+| 7   | 2023-05-28 |[Session 7. Introduction to Apache Airflow](url) | [김성훈](https://github.com/tjdgns327), [이희민](https://github.com/sainthm) | How can we schedule, orchestrate data processing? | #Apache Airflow #Tutorial |
 | 8   | 2023-06-04 |[Session 8. Cloud Computing and Data Engineering](url) | [이민행](https://github.com/PacoLee33), [이영전](https://github.com/Steve-YJ)| What is Cloud Computing? and Why it is so important? | #Cloud Computing #Multi-Cloud #Data Engineering |
 | 9   | 2023-06-18 |[Capstone Project](url) | [이화림](https://github.com/HWALIMLEE)| Let's dive into Data Engineering Capstone Proeject | #Capstone Project |
-| 10  | 2023-07-09 - |[Project Management](url) | [전희선](https://github.com/heehehe), [정경륜](https://github.com/ryuni-dev), [이동욱](https://github.com/ehddnr301), [김예신](https://github.com/yesinkim)  | Build Together! | #Share #Motivation #Delighted to work together #Pseudo-Lab |
-<br></br>
+| 10  | 2023-07-09 - |[Project Management](url) | [이영전](https://github.com/Steve-YJ), [전희선](https://github.com/heehehe), [정경륜](https://github.com/ryuni-dev), [이동욱](https://github.com/ehddnr301), [김예신](https://github.com/yesinkim)  | Build Together! | #Share #Motivation #Delighted to work together #Pseudo-Lab |
 
 <h2>Contributors 😃</h2>
 
@@ -90,3 +89,13 @@ click the above will guide you <a src='https://pseudo-lab.github.io/data-enginee
 <h2>License 🗞</h2>
 
 This project is licensed under [MIT](https://opensource.org/licenses/MIT) license.
+
+
+<script src="https://utteranc.es/client.js"
+        repo="ehddnr301/data-engineering-for-everybody"
+        issue-term="pathname"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
