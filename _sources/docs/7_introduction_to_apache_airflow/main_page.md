@@ -13,7 +13,7 @@
   * Airflow
 
 <script src="https://utteranc.es/client.js"
-        repo="ehddnr301/data-engineering-for-everybody"
+        repo="Pseudo-Lab/data-engineering-for-everybody"
         issue-term="pathname"
         label="comments"
         theme="preferred-color-scheme"

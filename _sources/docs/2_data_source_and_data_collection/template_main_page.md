@@ -19,7 +19,7 @@
 - 혹시 작성된 내용이 잘못되었거나 설명이 부족한 부분이 있는 경우 [Repository Issue](https://github.com/Pseudo-Lab/data-engineering-for-everybody/issues)를 통해 남겨주시면 감사하겠습니다.
 
 <script src="https://utteranc.es/client.js"
-        repo="ehddnr301/data-engineering-for-everybody"
+        repo="Pseudo-Lab/data-engineering-for-everybody"
         issue-term="pathname"
         label="comments"
         theme="preferred-color-scheme"
