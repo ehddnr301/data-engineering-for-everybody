@@ -15,15 +15,12 @@
 
 ## Architecture
 
-<p align="center">
-  <img src="./images/9_0_1.png" style="width:70% ">
-</p>
+<img src="./images/9_0_1.png" align="center">
+
 
 ## Final Visualization
 
-<p align="center">
-  <img src="./images/9_0_2.png" style="width:70% ">
-</p>
+<img src="./images/9_0_2.png" align="center">
 
 - `그룹별 평균 만족도 점수` 차트 혹은 `유저 만족도 현황` 차트를 보았을 때 A/B Test에서 B그룹 만족도가 개선
 - 우리의 추천시스템이, 서비스가 잘 작동하고 있구나를 모니터링하는것이 목표입니다.
