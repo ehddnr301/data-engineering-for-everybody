@@ -19,3 +19,12 @@
     - Terraform 부분의 README를 참고하여 GCP e2-standard-2 VM 3대를 생성합니다.
     - Ansible 부분의 README를 참고하여 쿠버네티스 환경을 GCP VM에 구성합니다.
 - MovieRecommend-K8s Repository를 Clone하여 쿠버네티스 환경에서 필요한 프로젝트를 배포합니다.
+
+<script src="https://utteranc.es/client.js"
+        repo="Pseudo-Lab/data-engineering-for-everybody"
+        issue-term="pathname"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

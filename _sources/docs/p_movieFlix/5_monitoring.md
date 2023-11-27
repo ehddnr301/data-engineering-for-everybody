@@ -35,3 +35,13 @@
 - 이것이 현실 서비스 였다면 위 대시보드 만으로 우리의 Treatment가 효과적이었다고 할 수 있을지 생각해보면 좋을 것 같습니다.
     - 평균 만족도만 살펴서 괜찮은것인지?, B그룹내 특정 유저들만 만족도가 높아서 평균이 올라간 것은 아닌지?
     - 만족도에 영향을 주는 다른 변수는 없는것인지?, 담당자 실수로 B그룹 유저들에 쿠폰이 나감
+
+
+<script src="https://utteranc.es/client.js"
+        repo="Pseudo-Lab/data-engineering-for-everybody"
+        issue-term="pathname"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

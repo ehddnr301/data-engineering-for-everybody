@@ -98,3 +98,12 @@ while True:
     client_sender.send_user_reaction(CLIENT_WAIT_TIME, users, movie_id) # 추천 받은 영화에 대해 유저가 피드백 및 평점 리턴
 ```
 
+
+<script src="https://utteranc.es/client.js"
+        repo="Pseudo-Lab/data-engineering-for-everybody"
+        issue-term="pathname"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

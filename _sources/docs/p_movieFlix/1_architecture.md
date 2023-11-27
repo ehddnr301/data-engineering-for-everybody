@@ -34,3 +34,13 @@
 
 - 람다 아키텍처의 단점
     - `복잡성`: 두 개의 별도 계층을 관리해야 하므로 운영 복잡성이 높습니다.
+
+
+<script src="https://utteranc.es/client.js"
+        repo="Pseudo-Lab/data-engineering-for-everybody"
+        issue-term="pathname"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>

@@ -64,3 +64,12 @@ Sink
 ```
 
 - `/MovieRecommend/project/kafka/connector_preprocess` 경로의 json파일을 구성해야합니다.
+
+<script src="https://utteranc.es/client.js"
+        repo="Pseudo-Lab/data-engineering-for-everybody"
+        issue-term="pathname"
+        label="comments"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+</script>
