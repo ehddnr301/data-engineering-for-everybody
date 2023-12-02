@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>4.7 databases &#8212; Data Engineering for Everybody</title>
+    <title>4.7 Databases &#8212; Data Engineering for Everybody</title>
   
   
   
@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../../_static/PseudoLab_logo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="4.8 Key-Value Store (KVS)" href="4.8_key_value_store.html" />
+    <link rel="next" title="🗂️ 참고자료(Reference)" href="4.8_reference.html" />
     <link rel="prev" title="4.6 💻 Data Pipeline 실습" href="4.6_data_pipeline_example.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -191,12 +191,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="4.4_data_lake.html">4.4 Data Lake</a></li>
 <li class="toctree-l2"><a class="reference internal" href="4.5_data_lakehouse.html">4.5 Data Lakehouse</a></li>
 <li class="toctree-l2"><a class="reference internal" href="4.6_data_pipeline_example.html">4.6 💻 Data Pipeline 실습</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.7 databases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4.8_key_value_store.html">4.8 Key-Value Store (KVS)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4.9_wide_column_store.html">4.9 Wide-Column Store (Column-family Store)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4.10_document_store.html">4.10 Document Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4.11_graph_store.html">4.11 Graph Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4.12_references.html"><code class="docutils literal notranslate"><span class="pre">🗂️ 참고자료(Reference)</span></code></a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">4.7 Databases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.8_reference.html"><code class="docutils literal notranslate"><span class="pre">🗂️ 참고자료(Reference)</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../5_data_processing_frameworks_1/main_page.html">5. Data Processing Frameworks I</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -257,6 +253,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../p_movieFlix/3_data_generation.html">3. 데이터 생성</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../p_movieFlix/4_data_flow.html">4. Data Flow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../p_movieFlix/5_monitoring.html">5. Monitoring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../p_movieFlix/6_reference.html"><code class="docutils literal notranslate"><span class="pre">🗂️ 참고자료(Reference)</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -313,7 +310,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/ehddnr301/data-engineering-for-everybody" target="_blank"
+      <li><a href="https://github.com/pseudo-lab/data-engineering-for-everybody" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -330,7 +327,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/ehddnr301/data-engineering-for-everybody/issues/new?title=Issue%20on%20page%20%2Fdocs/4_data_storage/4.7_databases.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/pseudo-lab/data-engineering-for-everybody/issues/new?title=Issue%20on%20page%20%2Fdocs/4_data_storage/4.7_databases.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -429,7 +426,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -440,11 +439,52 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>4.7 databases</h1>
+    <h1>4.7 Databases</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-value-store-kvs">Key-Value Store (KVS)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operation">기본 operation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">장점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">사용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-key-value-stores">Top 10 Key-Value Stores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redis">Redis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oracle-berkeley-db">Oracle Berkeley DB</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wide-column-store-column-family-store">Wide-Column Store (Column-family Store)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">장점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">사용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-wide-column-stores">Top 10 Wide-Column Stores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cassandra">Cassandra</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#document-store">Document Store</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">장점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">사용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-document-stores">Top 10 Document Stores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mongodb">MongoDB</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-store">Graph Store</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">장점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">사용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-graph-stores">Top 10 Graph Stores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neo4j">Neo4j</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -455,9 +495,325 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section id="databases">
-<h1>4.7 databases<a class="headerlink" href="#databases" title="Permalink to this heading">#</a></h1>
+<h1>4.7 Databases<a class="headerlink" href="#databases" title="Permalink to this heading">#</a></h1>
 <p>데이터를 저장하기 위해 사용되는 데이터베이스는 크게 <code class="docutils literal notranslate"><span class="pre">RDBMS</span></code>와 <code class="docutils literal notranslate"><span class="pre">NoSQL(Not</span> <span class="pre">only</span> <span class="pre">SQL)</span></code>로 나눌 수 있습니다.
 <br>이번 챕터에서는 그 중 NoSQL 데이터베이스의 종류 및 특징에 대해 알아보고자 합니다.</p>
+<section id="key-value-store-kvs">
+<h2>Key-Value Store (KVS)<a class="headerlink" href="#key-value-store-kvs" title="Permalink to this heading">#</a></h2>
+<p>Key-Value Store (KVS) 는 모든 데이터를 key - value 쌍으로 저장하는 데이터베이스로, 해시 함수나 python에서의 dictionary 형식과 유사한 형태로 저장됩니다.</p>
+<section id="operation">
+<h3>기본 operation<a class="headerlink" href="#operation" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PUT</span></code>: 새로운 key - value 쌍을 입력합니다. (이미 해당 key가 존재할 경우에는 value를 업데이트 합니다.)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">GET</span></code>: 주어진 key에 대한 value를 반환합니다.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DELETE</span></code>: 해당 key가 존재할 경우, key - value 쌍을 삭제합니다.</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>장점<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p>value에 대한 data type 제약이 없습니다.</p></li>
+<li><p>value에 각각 다른 속성을 추가할 수도 있습니다.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">user</span><span class="p">:</span><span class="mi">123</span><span class="p">:</span><span class="n">preferences</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="s2">&quot;ko&quot;</span><span class="p">}</span>
+<span class="n">user</span><span class="p">:</span><span class="mi">123</span><span class="p">:</span><span class="n">preferences</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;language&quot;</span><span class="p">:</span> <span class="s2">&quot;en&quot;</span><span class="p">,</span> <span class="s2">&quot;color&quot;</span><span class="p">:</span> <span class="s2">&quot;blue&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h3>단점<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>key에 의해서만 값을 찾아야 하므로, key 값을 알 수 없는 경우 데이터를 찾을 수 없습니다.</p></li>
+<li><p>이를 위해 value 기반으로 검색하는 기능을 제공하거나, 보조 인덱스를 생성하는 데이터베이스도 있습니다.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h3>사용 예시<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>유저별 세션 정보 저장 (key : 세션 ID / value : 세션 정보)</p></li>
+<li><p>유저별 프로필 및 기본 설정 (key: 유저 ID / value : 유저 정보)</p></li>
+<li><p>유저별 추천, 광고 등 (key: 유저 ID / value : 해당 유저에 적합한 추천 아이템 및 광고 등)</p></li>
+</ul>
+</section>
+<section id="top-10-key-value-stores">
+<h3>Top 10 Key-Value Stores<a class="headerlink" href="#top-10-key-value-stores" title="Permalink to this heading">#</a></h3>
+<p>그렇다면 어떤 Key-Value Store가 많이 사용되고 있을까요?
+<br><a class="reference external" href="https://db-engines.com">https://db-engines.com</a>를 기반으로 Top 10 Key-Value Stores를 살펴보겠습니다.</p>
+<p><img alt="kvs_rank" src="../../_images/4.2.1_kvs_rank.png" />
+(출처: <a class="reference external" href="https://db-engines.com/en/ranking/key-value+store">https://db-engines.com/en/ranking/key-value+store</a>)</p>
+</section>
+<section id="redis">
+<h3>Redis<a class="headerlink" href="#redis" title="Permalink to this heading">#</a></h3>
+<p>가장 많이 사용되는 KVS는 바로 Redis(Remote Dictionary Server) 입니다.
+<br>Twitter, Pinterest, stackoverflow 등 다양한 회사에서도 유저별 세션 정보 저장 시 이용하고 있는 Redis는 다음과 같은 특징을 가지고 있습니다.</p>
+<ul class="simple">
+<li><p>in-memory 구조</p>
+<ul>
+<li><p>데이터를 디스크에 저장하지 않고 메모리에 저장하기 때문에 빠른 속도를 보장하게 됩니다.</p></li>
+<li><p>추가로 데이터를 디스크에 유지할 수도 있습니다.</p></li>
+</ul>
+</li>
+<li><p>비동기 복제 제공</p>
+<ul>
+<li><p>데이터가 기본 스토리지에 먼저 저장된 뒤, 복제본을 생성합니다.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="oracle-berkeley-db">
+<h3>Oracle Berkeley DB<a class="headerlink" href="#oracle-berkeley-db" title="Permalink to this heading">#</a></h3>
+<p>(인기 있는 DB는 아니지만) 현업에서 많이 사용하고 있는 KVS 중 하나로 Oracle Berkeley DB가 있습니다.</p>
+<ul class="simple">
+<li><p>현업에서 간단한 데이터 정제 시 key별 value 정보가 필요할 경우 사용되고 있습니다.</p></li>
+<li><p>임베디드 데이터베이스로, sqlite와 같이 파일 형식으로 DB가 저장됩니다.</p></li>
+<li><p>다만 병렬 접근 시 속도가 매우 느려진다는 단점이 있으며, 이러한 점이 보완된 RocksDB 등이 제시되고 있습니다.</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="wide-column-store-column-family-store">
+<h2>Wide-Column Store (Column-family Store)<a class="headerlink" href="#wide-column-store-column-family-store" title="Permalink to this heading">#</a></h2>
+<p>Google BigTable 에서 유래된 Wide-Column Store(Column-family Store)는 row key와 column name의 조합으로 값을 저장합니다.
+<br><img alt="wide_column" src="../../_images/4.2.2_wide_column.png" />
+<br>RDBMS와 유사한 형태로 볼 수 있지만, column이 지정되지 않고 자유롭게 입력될 수 있는 형태로 되어 있다는 차이점이 있습니다.</p>
+<section id="id4">
+<h3>장점<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>row마다 다른 column 개수를 가질 수 있고, 필요할 때마다 원하는 column 추가할 수 있습니다.</p></li>
+<li><p>RDBMS에서는 특정 column 값이 없을 때 default value를 넣어야 했지만,
+<br>Wide-Column Store에서는 특정 column에 대해 default 값으로 채우지 않아도 됩니다.</p></li>
+<li><p>필요한 column 정보만 쓰면 되고 특정 column에 해당하는 데이터만 읽으면 되기 때문에 처리 속도가 빠릅니다.</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>단점<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>multi-row 트랜잭션을 지원하지 않습니다.</p></li>
+<li><p>join, subquery 등 또한 지원하지 않습니다.</p></li>
+</ul>
+</section>
+<section id="id6">
+<h3>사용 예시<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>event logging: 이벤트별 사용자 로그 내역, 애플리케이션 오류 내역 등을 저장합니다.</p></li>
+<li><p>컨텐츠 관리 시스템: 컨텐츠별 댓글, 링크, 태그 등을 저장합니다.</p></li>
+</ul>
+</section>
+<section id="top-10-wide-column-stores">
+<h3>Top 10 Wide-Column Stores<a class="headerlink" href="#top-10-wide-column-stores" title="Permalink to this heading">#</a></h3>
+<p>그렇다면 어떤 Wide-Column Store가 많이 사용되고 있을까요?
+<br>Key-Value Store와 마찬가지로 <a class="reference external" href="https://db-engines.com">https://db-engines.com</a>에서 Top 10 Wide-Column Stores를 살펴보겠습니다.</p>
+<p><img alt="wide_column_rank" src="../../_images/4.2.2_wide_column_rank.png" />
+(출처: <a class="reference external" href="https://db-engines.com/en/ranking/wide+column+store">https://db-engines.com/en/ranking/wide+column+store</a>)</p>
+</section>
+<section id="cassandra">
+<h3>Cassandra<a class="headerlink" href="#cassandra" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p>페이스북에서 개발되고 애플, 넷플릭스, 우버 등에서 이용중인 Cassandra는 아파치 재단에서 관리하고 있는 오픈소스입니다.</p></li>
+<li><p>데이터가 노드에 분산되어 저장되므로 노드를 추가하여 수평적으로 확장할 수 있습니다.</p></li>
+<li><p>Cassandra 전용 쿼리 언어인 CQL(Cassandra Query Language)을 제공합니다.
+<br>이는 SQL과 비슷하지만 join 및 subquery를 제공하지 않고 외래 키가 없다는 특징이 있습니다.</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span>// 테이블 생성
+CREATE TABLE users (
+    user_id uuid PRIMARY KEY,
+    first_name text,
+    last_name text,
+    email text,
+    password text,
+    created_at timestamp
+);
+
+// 데이터 삽입
+INSERT INTO users (user_id, first_name, last_name, email, password, created_at) VALUES 
+    (uuid(), &#39;John&#39;, &#39;Doe&#39;, &#39;john.doe@example.com&#39;, &#39;password123&#39;, toTimestamp(now()));
+
+// 데이터 조회
+SELECT * FROM users WHERE user_id = f3f9e3e3-301b-4c8a-ae0a-ccbae7b477a2;
+
+// 데이터 업데이트
+UPDATE users SET password = &#39;newpassword123&#39; WHERE user_id = f3f9e3e3-301b-4c8a-ae0a-ccbae7b477a2;
+
+// 데이터 삭제
+DELETE FROM users WHERE user_id = f3f9e3e3-301b-4c8a-ae0a-ccbae7b477a2;
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="document-store">
+<h2>Document Store<a class="headerlink" href="#document-store" title="Permalink to this heading">#</a></h2>
+<p>Document Store는 흔히 알고 있는 JSON 형식으로 데이터가 저장되는 데이터베이스 입니다.
+<br><img alt="document_db" src="../../_images/4.2.3_document_db.png" />
+<br>Document Store에는 테이블을 나타내는 <code class="docutils literal notranslate"><span class="pre">collection</span></code>과 테이블 내 row를 나타내는 <code class="docutils literal notranslate"><span class="pre">document</span></code>가 있습니다.
+<br>(각 document가 collection에 저장된다고 볼 수 있습니다.)</p>
+<section id="id7">
+<h3>장점<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>collection 내 document들끼리 동일한 구조이지 않아도 되기 때문에
+<br>스키마를 정하지 않고 데이터를 저장할 수 있으며, 스키마가 변경되어도 데이터를 계속 저장할 수 있습니다.</p></li>
+<li><p>데이터가 직관적이고, 개발 시 객체로 바로 적용할 수도 있습니다.</p></li>
+<li><p>테이블 간 join 또한 필요하지 않습니다.</p></li>
+</ul>
+</section>
+<section id="id8">
+<h3>단점<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>중복 데이터에 대한 관리가 어렵다는 단점이 있습니다.</p></li>
+<li><p>만약 특정 값을 다른 문서로 복사한 다음 그 값이 변경된다면,
+<br>다른 문서 내용도 변경하기 위해 복사를 해왔던 문서를 기억해야 하는 번거로움이 있습니다.</p></li>
+</ul>
+</section>
+<section id="id9">
+<h3>사용 예시<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p>상품 카탈로그</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;product_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">123</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Macbook M2 Pro&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;category_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;345&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;laptop&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</li>
+<li><p>Event logging : 유저 로그, 제품 구매 내역, 오류 로그 등</p></li>
+</ul>
+</section>
+<section id="top-10-document-stores">
+<h3>Top 10 Document Stores<a class="headerlink" href="#top-10-document-stores" title="Permalink to this heading">#</a></h3>
+<p>Document Store에서는 어떤 데이터베이스가 많이 사용되고 있을까요?
+<br>앞에서와 같이 <a class="reference external" href="https://db-engines.com">https://db-engines.com</a>를 통해 Top 10 Document Stores를 살펴보겠습니다.</p>
+<p><img alt="document_db_rank" src="../../_images/4.2.3_document_db_rank.png" />
+(출처: <a class="reference external" href="https://db-engines.com/en/ranking/document+store">https://db-engines.com/en/ranking/document+store</a>)</p>
+</section>
+<section id="mongodb">
+<h3>MongoDB<a class="headerlink" href="#mongodb" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p>랭킹에서 압도적인 score를 보이는 만큼 Document Store를 대표한다고 볼 수 있는 MongoDB는 BSON(Binary JSON) 형식으로 데이터를 저장합니다.</p></li>
+<li><p>Cassandra가 CQL을 제공하는 것과 유사하게 자체 쿼리 언어인 MQL(MongoDB Query Language)을 제공합니다.</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span>// 데이터 삽입
+db.users.insertOne({
+    &quot;first_name&quot;: &quot;John&quot;,
+    &quot;last_name&quot;: &quot;Doe&quot;,
+    &quot;email&quot;: &quot;john.doe@example.com&quot;,
+    &quot;password&quot;: &quot;password123&quot;,
+    &quot;created_at&quot;: new Date()
+})
+
+// 데이터 조회
+db.users.find({
+    &quot;email&quot;: &quot;john.doe@example.com&quot;
+})
+
+// 데이터 업데이트
+db.users.updateOne(
+    {&quot;email&quot;: &quot;john.doe@example.com&quot;},
+    {$set: {&quot;password&quot;: &quot;newpassword123&quot;}}
+)
+
+// 데이터 삭제
+db.users.deleteOne({
+    &quot;email&quot;: &quot;john.doe@example.com&quot;
+})
+</pre></div>
+</div>
+</li>
+<li><p>또한 sharding 기능을 제공하여 여러 서버에 분산 저장을 할 수도 있습니다.
+<img alt="sharding" src="../../_images/4.2.3_sharding.png" /></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="graph-store">
+<h2>Graph Store<a class="headerlink" href="#graph-store" title="Permalink to this heading">#</a></h2>
+<p>Graph Store는 말 그대로 그래프 구조로 데이터를 저장하며, node 및 edge 정보를 저장하게 됩니다.
+<br><img alt="graph_structure" src="../../_images/4.2.4_graph_structure.png" /></p>
+<p>Graph Store의 주요 특징으로는 쿼리 형태가 그래프를 traversing 하는 식으로 진행된다는 점이 있습니다.
+<br>예를 들어 A가 팔로우하고 있는 모든 user 찾으려고 할 때, user A에 대한 node에서 팔로우와 관련된 edge를 통해 다른 user node 정보를 얻는 등과 같이 그래프의 node와 edge를 따라가면 원하는 정보를 얻을 수 있습니다.</p>
+<section id="id10">
+<h3>장점<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>최종 구조를 미리 정의할 필요 없이 node, edge 및 해당 속성을 기존 그래프에 추가하거나 삭제할 수 있습니다.</p></li>
+<li><p>이미 데이터가 서로 연결되어 있기 때문에 join을 수행할 필요 없이 특정 node에서부터 다른 node까지 edge를 따라가면 원하는 값을 얻을 수 있습니다.</p></li>
+<li><p>데이터 형식이 직관적이고 시각화하기 쉽습니다.</p></li>
+</ul>
+</section>
+<section id="id11">
+<h3>단점<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>그래프 형식으로 표현 가능한 데이터에만 적합합니다.</p></li>
+<li><p>새로운 쿼리 언어(Cypher, SPARQL 등)를 이용해야 하기 때문에 러닝커브가 있습니다.</p></li>
+</ul>
+</section>
+<section id="id12">
+<h3>사용 예시<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p>소셜 네트워크 데이터 (사람들 간 팔로우 정보, 게시물 및 좋아요 정보 등)</p></li>
+<li><p>전염병 데이터 (사람들 간 접촉 정보, 감염 여부 등)</p></li>
+<li><p>경로 안내 서비스 (장소 간 거리 정보로 최적 경로 제공)</p></li>
+<li><p>추천시스템 (유사한 사용자가 시청한 다른 영화를 그래프 기반으로 검색)</p></li>
+</ul>
+</section>
+<section id="top-10-graph-stores">
+<h3>Top 10 Graph Stores<a class="headerlink" href="#top-10-graph-stores" title="Permalink to this heading">#</a></h3>
+<p>마지막으로 Graph Store에서는 어떤 데이터베이스가 많이 사용되고 있을까요?
+<br>Graph Store 또한 <a class="reference external" href="https://db-engines.com">https://db-engines.com</a>를 통해 Top 10 Graph Stores를 살펴보겠습니다.</p>
+<p><img alt="graph_rank" src="../../_images/4.2.4_graph_rank.png" />
+(출처: <a class="reference external" href="https://db-engines.com/en/ranking/graph+dbms">https://db-engines.com/en/ranking/graph+dbms</a>)</p>
+</section>
+<section id="neo4j">
+<h3>Neo4j<a class="headerlink" href="#neo4j" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p>대표적인 Graph Store인 Neo4j는 아래와 같은 아키텍쳐를 지니고 있습니다.
+<img alt="neo4j" src="../../_images/4.2.4_neo4j.png" /></p></li>
+<li><p>자체적으로 Neo4j graph 플랫폼을 제공하고 있어서 데이터에 접근하기에 용이합니다.
+<img alt="neo4j_example" src="../../_images/4.2.4_neo4j_example.png" /></p></li>
+<li><p>그래프와 관련된 다양한 알고리즘 기능 또한 제공합니다.</p>
+<ul class="simple">
+<li><p>path finding</p></li>
+<li><p>centrality</p></li>
+<li><p>community detection</p></li>
+<li><p>similarity</p></li>
+<li><p>link prediction</p></li>
+<li><p>node embeddings</p></li>
+<li><p>node classification</p></li>
+<li><p>…</p></li>
+</ul>
+</li>
+<li><p>데이터 접근 시에는 Cypher 쿼리 언어를 통해 접근할 수 있습니다.</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span>// node 생성
+CREATE (n:Person { name: &#39;John Doe&#39;, age: 30 })
+
+// node 검색
+MATCH (n:Person { name: &#39;John Doe&#39; }) RETURN n
+
+// node 간 edge 생성
+MATCH (p1:Person { name: &#39;John Doe&#39; }), (p2:Person { name: &#39;Jane Smith&#39; })
+CREATE (p1)-[:FRIENDS_WITH]-&gt;(p2)
+
+// node 및 edge 검색
+MATCH (p1:Person)-[:FRIENDS_WITH]-&gt;(p2:Person)
+WHERE p1.name = &#39;John Doe&#39;
+RETURN p1, p2
+
+// edge 수정
+MATCH (p1:Person)-[r:FRIENDS_WITH]-&gt;(p2:Person)
+WHERE p1.name = &#39;John Doe&#39; AND p2.name = &#39;Jane Smith&#39;
+SET r.since = &#39;2022-01-01&#39;
+
+// edge 제거
+MATCH (p1:Person)-[r:FRIENDS_WITH]-&gt;(p2:Person)
+WHERE p1.name = &#39;John Doe&#39; AND p2.name = &#39;Jane Smith&#39;
+DELETE r
+</pre></div>
+</div>
+</li>
+</ul>
 <script src="https://utteranc.es/client.js"
         repo="Pseudo-Lab/data-engineering-for-everybody"
         issue-term="pathname"
@@ -466,6 +822,8 @@ document.write(`
         crossorigin="anonymous"
         async>
 </script></section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -508,11 +866,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="4.8_key_value_store.html"
+       href="4.8_reference.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">4.8 Key-Value Store (KVS)</p>
+        <p class="prev-next-title"><code class="docutils literal notranslate"><span class="pre">🗂️ 참고자료(Reference)</span></code></p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -525,6 +883,53 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-value-store-kvs">Key-Value Store (KVS)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#operation">기본 operation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">장점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">사용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-key-value-stores">Top 10 Key-Value Stores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#redis">Redis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#oracle-berkeley-db">Oracle Berkeley DB</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wide-column-store-column-family-store">Wide-Column Store (Column-family Store)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">장점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">사용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-wide-column-stores">Top 10 Wide-Column Stores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cassandra">Cassandra</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#document-store">Document Store</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">장점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">사용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-document-stores">Top 10 Document Stores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mongodb">MongoDB</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graph-store">Graph Store</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">장점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">단점</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">사용 예시</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-10-graph-stores">Top 10 Graph Stores</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#neo4j">Neo4j</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
